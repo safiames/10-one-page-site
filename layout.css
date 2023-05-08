@@ -24,16 +24,19 @@ h2 {
   font-size: 30px;
   color: orange;
 }
+
 #menneisyys {
+  display: flex;
+}
+
+#card {
   max-width: 300px;
   margin: 0 auto;
-
   margin-top: 20vh;
 }
 
 #menneisyys img {
   width: 100%;
-  border-radius: 12px;
   height: 214px;
 
   object-fit: cover;
@@ -50,5 +53,14 @@ h2 {
 .nykyisyys {
 }
 
+#nykyisyys img {
+  width: 50%;
+  height: 160px;
+}
+
+#tulevaisuus img {
+  width: 50%;
+  height: 160px;
+}
 .tulevaisuus {
 }
