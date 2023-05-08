@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: gray;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nav ul > * {
+  padding: 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.menneisyys {
+}
+
+.nykyisyys {
+}
+
+.tulevaisuus {
+}
