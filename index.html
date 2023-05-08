@@ -104,6 +104,52 @@
 
     <section id="yhteystiedot">
       <h2 class="headers">Contact Me</h2>
+      <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Nimi:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Kirjoita nimi"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Sähköpostiosoite:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Kirjoita email-osoite"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Palaute:</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Kirjoita viesti"
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Lähetä" />
+          </div>
+        </form>
+      </div>
     </section>
 
     <footer>&#169; 2023</footer>
