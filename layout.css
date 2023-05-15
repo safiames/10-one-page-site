@@ -21,19 +21,16 @@ nav {
   margin: -2rem -2rem -0.1rem -2rem;
   z-index: 10;
 }
-
 main {
   padding-block-start: 19.5rem;
 }
-
 nav > a {
   padding: 0.5rem;
   text-decoration: none;
-  color: floralwhite;
+  color: antiquewhite;
   margin-block-end: 0.5rem;
 }
-
-.portfolio-wrap {
+.wrap-portfolio {
   background-image: url(https://source.unsplash.com/1600x900/?flowers);
   background-repeat: no-repeat;
   background-position: center;
@@ -41,15 +38,15 @@ nav > a {
   background-clip: border-box;
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .portfolio {
   color: antiquewhite;
   margin: 2rem;
-  background-color: #1a1919a8;
+  background-color: #1a191995;
   width: 90%;
   z-index: 1;
   display: flex;
@@ -65,58 +62,52 @@ nav > a {
 
 .examples > li > a {
   color: mistyrose;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-decoration: none;
 }
-
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   padding: 1rem;
   margin-block-end: 2rem;
 }
-
 h2 {
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
-
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: darkorchid;
+
   margin-block-end: 2rem;
 }
-
 h4 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: bold;
+  padding: 1rem;
 }
-
 .wrap {
-  background-color: floralwhite;
+  background-color: white;
 }
 
 .menneisyys-header {
   color: darkorchid;
   padding: 1rem 0 2rem 1rem;
 }
-
 .menneisyys {
-  background-color: floralwhite;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
-
 .card1,
 .card2,
 .card3 {
   flex: 1;
   border: 1px solid lightgrey;
-  padding: 1rem;
+  padding: 2rem;
   margin-block-end: 1rem;
   border-radius: 2rem;
 }
-
-.card-img {
+.cardimg {
   max-width: 100%;
 }
 
@@ -132,10 +123,9 @@ h4 {
 
 .line {
   background-color: darkorchid;
-  height: 3px;
+  height: 2px;
   margin-block-start: 2rem;
 }
-
 .contact {
   margin-block-start: 2rem;
   display: flex;
@@ -149,15 +139,13 @@ h4 {
   width: 80%;
   max-width: 700px;
 }
-
-.form-wrap {
+.formwrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-
 label {
   flex: 1;
   margin-block-end: 1rem;
@@ -177,16 +165,82 @@ input[type="submit"] {
   padding: 1rem;
   border-radius: 0.7rem;
   background-color: darkorchid;
-  color: floralwhite;
-  font-size: 1.5rem;
+  color: white;
+  font-size: 1.6rem;
 }
 
 footer {
   color: darkorchid;
 }
-
 .hr-line {
   border: none;
   border-top: 1px solid plum;
   margin: 1rem 0;
+}
+
+@media screen and (min-width: 426px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: darkorchid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  nav a:first-child {
+    margin-right: auto;
+  }
+  nav a:last-child {
+    margin-right: 3rem;
+  }
+
+  main {
+    padding-block-start: 7rem;
+  }
+  .menneisyys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+  }
+  .card1,
+  .card2 {
+    flex: 1;
+  }
+  .card3 {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+
+  .nykyisyys-image {
+    width: 30rem;
+    height: auto;
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+  }
+  .tulevaisuus-image {
+    width: 30rem;
+    height: auto;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card1,
+  .card2,
+  .card3 {
+    flex: 1;
+  }
+  .float-image {
+    margin-block-end: 3rem;
+  }
+  .line {
+    background-color: darkorchid;
+    height: 3px;
+    margin: 6rem 0rem 3rem 0rem;
+  }
 }
