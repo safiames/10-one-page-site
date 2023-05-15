@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: papayawhip;
+  padding: 2rem;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: darkorchid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin: -2rem -2rem -0.1rem -2rem;
+  z-index: 10;
+}
+
+main {
+  padding-block-start: 19.5rem;
+}
+
+nav > a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: floralwhite;
+  margin-block-end: 0.5rem;
+}
+
+.portfolio-wrap {
+  background-image: url(https://source.unsplash.com/1600x900/?flowers);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio {
+  color: antiquewhite;
+  margin: 2rem;
+  background-color: #1a1919a8;
+  width: 90%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.examples {
+  padding: 1rem;
+  margin-block-end: 2rem;
+}
+
+.examples > li > a {
+  color: mistyrose;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  margin-block-end: 2rem;
+}
+
+h2 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: darkorchid;
+  margin-block-end: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.wrap {
+  background-color: floralwhite;
+}
+
+.menneisyys-header {
+  color: darkorchid;
+  padding: 1rem 0 2rem 1rem;
+}
+
+.menneisyys {
+  background-color: floralwhite;
+  display: flex;
+  flex-direction: column;
+}
