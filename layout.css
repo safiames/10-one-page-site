@@ -105,3 +105,88 @@ h4 {
   display: flex;
   flex-direction: column;
 }
+
+.card1,
+.card2,
+.card3 {
+  flex: 1;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  margin-block-end: 1rem;
+  border-radius: 2rem;
+}
+
+.card-img {
+  max-width: 100%;
+}
+
+.nykyisyys-image,
+.tulevaisuus-image {
+  max-width: 100%;
+  margin-block-end: 1rem;
+}
+
+.paragraph {
+  margin-block-end: 2rem;
+}
+
+.line {
+  background-color: darkorchid;
+  height: 3px;
+  margin-block-start: 2rem;
+}
+
+.contact {
+  margin-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 700px;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  flex: 1;
+  margin-block-end: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  flex: 3;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  max-width: 10rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: darkorchid;
+  color: floralwhite;
+  font-size: 1.5rem;
+}
+
+footer {
+  color: darkorchid;
+}
+
+.hr-line {
+  border: none;
+  border-top: 1px solid plum;
+  margin: 1rem 0;
+}
